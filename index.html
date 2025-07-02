@@ -119,6 +119,19 @@
             animation: glow 3s ease-in-out infinite alternate;
         }
 
+        .company-info {
+          color: white;
+        }
+
+        @media (max-width: 768px) {
+            .company-info {
+                width: 100vw;
+                padding-inline: 10%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
         .tagline {
             color: rgba(255, 255, 255, 0.8);
             font-size: 0.9rem;
@@ -457,7 +470,7 @@
             <div class="particle"></div>
         </div>
         
-        <div>
+        <div class="company-info">
             <h1 class="company-name">GRÁFICA CRISTAL</h1>
             <p class="tagline">Dando forma às suas ideias com qualidade e rapidez</p>
         </div>
