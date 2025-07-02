@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfica Cristal - Logo 3D</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gráfica Cristal</title>
     <style>
         * {
             margin: 0;
@@ -216,6 +218,10 @@
             display: flex;
             gap: 20px;
             margin-top: 30px;
+        }
+
+        .crystal-btn a {
+          color: #fff;
         }
 
         .crystal-btn {
@@ -452,7 +458,7 @@
         
         <div>
             <h1 class="company-name">GRÁFICA CRISTAL</h1>
-            <p class="tagline">Impressão Premium</p>
+            <p class="tagline">Dando forma às suas ideias com qualidade e rapidez</p>
         </div>
         
         <div class="buttons-container">
@@ -460,9 +466,9 @@
                 <span class="btn-icon">💎</span>
                 SERVIÇOS
             </button>
-            <button class="crystal-btn" onclick="showContact()">
-                <span class="btn-icon">📞</span>
-                CONTATO
+            <button class="crystal-btn">
+                <span class="btn-icon">📱</span>
+                <a href="https://wa.me/5521965903940" target="_blank">WHATSAPP</a>
             </button>
         </div>
     </div>
@@ -501,31 +507,9 @@
         </div>
     </div>
 
-    <!-- Modal para Contato -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('contactModal')">&times;</span>
-            <h2>Entre em Contato</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>📍 Endereço:</strong>
-                    <p>Rua dois de maio, 413 - Centro<br>Rio de Janeiro - RJ</p>
-                </div>
-                <div class="contact-item">
-                    <strong>📱 Chama no zap:</strong>
-                    <a href="https://wa.me/5521965903940" target="_blank"><p>(21) 96590-3940</p></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
         function showServices() {
             document.getElementById('servicesModal').style.display = 'block';
-        }
-
-        function showContact() {
-            document.getElementById('contactModal').style.display = 'block';
         }
 
         function closeModal(modalId) {
